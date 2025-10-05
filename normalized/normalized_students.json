@@ -48,5 +48,97 @@
       "updated_at": "2025-10-02T13:03:33Z",
       "model": "gpt-4o-mini"
     }
+  },
+  "stu_1": {
+    "raw_hash": "sha256:50c6d1c5f8ed672c3d26958f6c6007d483d0475cbe1863e068bb49744255b025",
+    "normalized": {
+      "id": "stu_1",
+      "citizenships": [],
+      "residence_country": null,
+      "academics": {
+        "track": null,
+        "year_level_fr": null,
+        "grades": {},
+        "english": {
+          "evidence": null,
+          "score": null,
+          "valid_to": null
+        }
+      },
+      "preferences": {
+        "campus_setting": "urban",
+        "values": [
+          "esprit international"
+        ],
+        "domains_priorities": [
+          "finance",
+          "finance d'entreprise"
+        ],
+        "countries_targets": [
+          "GB"
+        ]
+      },
+      "constraints": {
+        "pmr": false,
+        "visa_flex": false
+      },
+      "budget": {
+        "annual_total": null
+      },
+      "languages": [
+        "en"
+      ]
+    },
+    "meta": {
+      "updated_at": "2025-10-05T16:35:28Z",
+      "model": "gpt-4o-mini"
+    }
+  },
+  "stu_4": {
+    "raw_hash": "sha256:1e6e45bac1ca40aee009ebe43b8bb70117ac3364245c373708c82c8e7a7de035",
+    "normalized": {
+      "id": "stu_4",
+      "citizenships": [],
+      "residence_country": null,
+      "academics": {
+        "track": null,
+        "year_level_fr": null,
+        "grades": {},
+        "english": {
+          "evidence": null,
+          "score": null,
+          "valid_to": null
+        }
+      },
+      "preferences": {
+        "campus_setting": "urban",
+        "values": [
+          "enseignement artistique",
+          "innovation",
+          "durabilité",
+          "esprit international"
+        ],
+        "domains_priorities": [
+          "architecture"
+        ],
+        "countries_targets": [
+          "GB"
+        ]
+      },
+      "constraints": {
+        "pmr": false,
+        "visa_flex": false
+      },
+      "budget": {
+        "annual_total": null
+      },
+      "languages": [
+        "en"
+      ]
+    },
+    "meta": {
+      "updated_at": "2025-10-05T16:35:33Z",
+      "model": "gpt-4o-mini"
+    }
   }
 }

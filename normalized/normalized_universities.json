@@ -334,5 +334,314 @@
       "updated_at": "2025-10-02T13:04:24Z",
       "model": "gpt-4o-mini"
     }
+  },
+  "uni_a03c5a3770b1": {
+    "raw_hash": "sha256:09582df8bc0b9d9b5d6db64457c5cdb43ee54645e903f84b2a3d702f4a9ad6ee",
+    "normalized": {
+      "id": "Imperial College London - Economics, Finance and Data Science",
+      "country": "GB",
+      "city": "Londres",
+      "institution_type": "university",
+      "public_private": "public",
+      "offer": {
+        "majors": [
+          "aeronautique",
+          "bio_ingenierie",
+          "chimie",
+          "informatique",
+          "design_engineering",
+          "mathematiques",
+          "physique",
+          "sciences_de_la_vie",
+          "medecine",
+          "business",
+          "finance"
+        ],
+        "teaching_languages": [
+          "en"
+        ],
+        "duration_years": 3,
+        "student_staff_ratio": 103,
+        "accreditations": [],
+        "bridge_programs": []
+      },
+      "admissions": {
+        "requires_portfolio": true,
+        "english_min": {
+          "ielts_overall": 7
+        },
+        "application_system": "UCAS",
+        "deadline": "2026-01-14"
+      },
+      "fees": {
+        "tuition": {
+          "amount": 42700,
+          "currency": "GBP"
+        },
+        "other_fees": {
+          "amount": 306,
+          "currency": "EUR"
+        }
+      },
+      "campus": {
+        "setting": "urban",
+        "pmr_ok": true,
+        "airports": [
+          "Heathrow",
+          "Gatwick"
+        ]
+      },
+      "results": {
+        "rank_uk": 6,
+        "salary_median_gbp": null
+      }
+    },
+    "meta": {
+      "updated_at": "2025-10-05T16:35:43Z",
+      "model": "gpt-4o-mini"
+    }
+  },
+  "uni_e8c58de69db7": {
+    "raw_hash": "sha256:05a4f8c1e7270820970dc60fe0f9ff0dbd026a5a8cb93c116218f578616f36c2",
+    "normalized": {
+      "id": "Imperial College London - Mathematics with Statistics for Finance",
+      "country": "GB",
+      "city": "Londres",
+      "institution_type": "university",
+      "public_private": "public",
+      "offer": {
+        "majors": [
+          "aeronautique",
+          "bio_ingenieurie",
+          "chimie",
+          "informatique",
+          "design_engineering",
+          "mathematiques",
+          "physique",
+          "sciences_de_la_vie",
+          "medecine",
+          "business",
+          "finance"
+        ],
+        "teaching_languages": [
+          "en"
+        ],
+        "duration_years": 3,
+        "student_staff_ratio": null,
+        "accreditations": [],
+        "bridge_programs": []
+      },
+      "admissions": {
+        "requires_portfolio": true,
+        "english_min": {
+          "ielts_overall": 7
+        },
+        "application_system": "UCAS",
+        "deadline": "2026-01-14"
+      },
+      "fees": {
+        "tuition": {
+          "amount": 42700,
+          "currency": "GBP"
+        },
+        "other_fees": {
+          "amount": 306,
+          "currency": "EUR"
+        }
+      },
+      "campus": {
+        "setting": "urban",
+        "pmr_ok": true,
+        "airports": [
+          "Heathrow",
+          "Gatwick"
+        ]
+      },
+      "results": {
+        "rank_uk": 4,
+        "salary_median_gbp": 39000
+      }
+    },
+    "meta": {
+      "updated_at": "2025-10-05T16:35:52Z",
+      "model": "gpt-4o-mini"
+    }
+  },
+  "uni_c2b4c2fb5853": {
+    "raw_hash": "sha256:ff6e05fc312b67e784d0beeb6381dbfd65164e32f08a57fb7b3fd39de7a094b7",
+    "normalized": {
+      "id": "Imperial College London - Computing (Management and Finance)",
+      "country": "GB",
+      "city": "Londres",
+      "institution_type": "university",
+      "public_private": "public",
+      "offer": {
+        "majors": [
+          "aeronautique",
+          "bio_ingenierie",
+          "chimie",
+          "informatique",
+          "design_engineering",
+          "mathematiques",
+          "physique",
+          "sciences_de_la_vie",
+          "medecine",
+          "business",
+          "finance"
+        ],
+        "teaching_languages": [
+          "en"
+        ],
+        "duration_years": 4,
+        "student_staff_ratio": null,
+        "accreditations": [],
+        "bridge_programs": []
+      },
+      "admissions": {
+        "requires_portfolio": true,
+        "english_min": {
+          "ielts_overall": 6.5
+        },
+        "application_system": "UCAS",
+        "deadline": "2026-01-14"
+      },
+      "fees": {
+        "tuition": {
+          "amount": 42500,
+          "currency": "GBP"
+        },
+        "other_fees": {
+          "amount": 306,
+          "currency": "EUR"
+        }
+      },
+      "campus": {
+        "setting": "urban",
+        "pmr_ok": true,
+        "airports": [
+          "Heathrow",
+          "Gatwick"
+        ]
+      },
+      "results": {
+        "rank_uk": 3,
+        "salary_median_gbp": 70000
+      }
+    },
+    "meta": {
+      "updated_at": "2025-10-05T16:36:03Z",
+      "model": "gpt-4o-mini"
+    }
+  },
+  "uni_1cd8a8d28190": {
+    "raw_hash": "sha256:8e697877b3fc810867f52d467a34dbac78015accf210bbe710f31ff4475b6a31",
+    "normalized": {
+      "id": "UCL - International Management",
+      "country": "GB",
+      "city": "Londres",
+      "institution_type": "university",
+      "public_private": "public",
+      "offer": {
+        "majors": [
+          "international_management"
+        ],
+        "teaching_languages": [
+          "en"
+        ],
+        "duration_years": 3,
+        "student_staff_ratio": null,
+        "accreditations": [],
+        "bridge_programs": [
+          "year_abroad"
+        ]
+      },
+      "admissions": {
+        "requires_portfolio": false,
+        "english_min": {
+          "ielts_overall": 7.5
+        },
+        "application_system": "UCAS",
+        "deadline": "2026-01-14"
+      },
+      "fees": {
+        "tuition": {
+          "amount": 39800,
+          "currency": "GBP"
+        },
+        "other_fees": {
+          "amount": 306,
+          "currency": "EUR"
+        }
+      },
+      "campus": {
+        "setting": "urban",
+        "pmr_ok": true,
+        "airports": [
+          "Heathrow",
+          "Gatwick"
+        ]
+      },
+      "results": {
+        "rank_uk": 7,
+        "salary_median_gbp": null
+      }
+    },
+    "meta": {
+      "updated_at": "2025-10-05T16:36:12Z",
+      "model": "gpt-4o-mini"
+    }
+  },
+  "uni_cfd9fcaf0845": {
+    "raw_hash": "sha256:56504c2b541e6a82c0f1ffc3184e58efa1e88b145da709fae618ef7ca79baa86",
+    "normalized": {
+      "id": "king's-college-accounting-finance",
+      "country": "GB",
+      "city": "Londres",
+      "institution_type": "university",
+      "public_private": null,
+      "offer": {
+        "majors": [
+          "accounting_and_finance"
+        ],
+        "teaching_languages": [
+          "en"
+        ],
+        "duration_years": 3,
+        "student_staff_ratio": null,
+        "accreditations": [],
+        "bridge_programs": []
+      },
+      "admissions": {
+        "requires_portfolio": false,
+        "english_min": {
+          "ielts_overall": 7
+        },
+        "application_system": "UCAS",
+        "deadline": "2026-01-14"
+      },
+      "fees": {
+        "tuition": {
+          "amount": 38300,
+          "currency": "GBP"
+        },
+        "other_fees": null
+      },
+      "campus": {
+        "setting": "urban",
+        "pmr_ok": true,
+        "airports": [
+          "Heathrow",
+          "Gatwick"
+        ]
+      },
+      "results": {
+        "rank_uk": 14,
+        "salary_median_gbp": null
+      }
+    },
+    "meta": {
+      "updated_at": "2025-10-05T16:36:19Z",
+      "model": "gpt-4o-mini"
+    }
   }
 }

@@ -13,5 +13,168 @@
     "constraints": { "pmr": false, "visa_flex": true },
     "budget": { "annual_total": { "amount": 42000, "currency": "EUR" } },
     "languages": ["en","fr"]
+  },
+  {
+    "id": "stu_1",
+    "Identité et contraintes administratives": {
+      "Nom": "",
+      "Prénom": "",
+      "Âge": 17,
+      "Nationalité(s)": [],
+      "Pays de résidence": "",
+      "Contraintes de visa": []
+    },
+    "Académique": {
+      "Classe": "",
+      "Cursus": "",
+      "Cours suivis": [],
+      "Notes/coeffs par matière": {},
+      "moyennes de classe par matière": {},
+      "rang de l'élève dans la classe par matière": {},
+      "certifications/langues": [],
+      "Autres expériences académiques (olympiades, concours général, publications, projets notables)": []
+    },
+    "Langues": [
+      {
+        "Langue": "anglais",
+        "Niveau validé": {
+          "date de délivrance du niveau": ""
+        },
+        "Niveau actuel estimé": "intermédiaire (B1)",
+        "Niveau souhaité/visé": "courant (C1)",
+        "Nombre d'années de pratique": "",
+        "Raison": "études et carrière internationale (finance)",
+        "Format de l'apprentissage": [
+          "cours scolaires",
+          "pratique personnelle"
+        ]
+      }
+    ],
+    "Activités": {
+      "Sports": [
+        {
+          "Sport": "tennis",
+          "Niveau": "loisir",
+          "Date début de pratique": "",
+          "Date fin de pratique": ""
+        }
+      ],
+      "Arts": [],
+      "Engagements": [],
+      "Stages": []
+    },
+    "Projet": {
+      "Liste des domaines d'étude visés avec ordre de priorité": [
+        "finance",
+        "finance d'entreprise"
+      ],
+      "Liste des pays visés par ordre de préférence": [
+        "Angleterre",
+        "Royaume-Uni"
+      ],
+      "Villes/Zone": [
+        "Londres"
+      ],
+      "Durée visée du séjour": "3 à 6 ans (durée du diplôme; possible année de césure en stages)",
+      "Distance/zone géographique souhaitée (pays, fuseaux, proximité famille).": "prêt à partir loin et longtemps pour l'avenir professionnel",
+      "Type de campus (urbain/suburbain/rural)": "urbain (grande ville)",
+      "Type de climat souhaité": "peu important (1/5)",
+      "Vie de campus (importance : clubs, fraternités/sororités, résidences, sport universitaire)": "souhaite rejoindre des associations pour s'intégrer",
+      "Culture/valeurs recherchées (innovation, durabilité, esprit international, religieux*)": "préférence pour une culture proche pour limiter le dépaysement; esprit international",
+      "Besoins spécifiques (aménagements, accessibilité, accompagnement)": "inquiétude légère sur l'intégration sociale; stratégie: rejoindre des associations"
+    },
+    "Finances & logistique": {
+      "Budget annuel total (frais + logement + vie)": "",
+      "Bourses": {
+        "Eligibilité": [],
+        "Volonté de faire appel à une bourse et laquelle": "oui si possible, mais pas bloquant"
+      },
+      "Autonomie souhaitée (hébergement campus/ville, restauration)": "souhaite gagner en autonomie (gestion du budget en grande ville)"
+    },
+    "Historique voyages / ouverture internationale (libre)": "voyages à l'international uniquement pour des vacances"
+  },
+  {
+    "id": "stu_4",
+    "Identité et contraintes administratives": {
+      "Nom": "",
+      "Prénom": "",
+      "Âge": "",
+      "Nationalité(s)": [],
+      "Pays de résidence": "",
+      "Contraintes de visa": []
+    },
+    "Académique": {
+      "Classe": "",
+      "Cursus": "",
+      "Cours suivis": [],
+      "Notes/coeffs par matière": {},
+      "moyennes de classe par matière": {},
+      "rang de l'élève dans la classe par matière": {},
+      "certifications/langues": [],
+      "Autres expériences académiques (olympiades, concours général, publications, projets notables)": []
+    },
+    "Langues": [
+      {
+        "Langue": "anglais",
+        "Niveau validé": {
+          "date de délivrance du niveau": ""
+        },
+        "Niveau actuel estimé": "entre B2 et C1",
+        "Niveau souhaité/visé": "C1",
+        "Nombre d'années de pratique": "",
+        "Raison": "études d'architecture au Royaume-Uni; vie quotidienne",
+        "Format de l'apprentissage": [
+          "cours scolaires",
+          "immersion (voyages)",
+          "pratique personnelle"
+        ]
+      }
+    ],
+    "Activités": {
+      "Sports": [
+        {
+          "Sport": "sports artistiques (pas de football)",
+          "Niveau": "loisir",
+          "Date début de pratique": "",
+          "Date fin de pratique": "",
+          "Fréquence": "jusqu'à 3 fois par semaine (ok)"
+        }
+      ],
+      "Arts": [],
+      "Engagements": [],
+      "Stages": []
+    },
+    "Projet": {
+      "Liste des domaines d'étude visés avec ordre de priorité": [
+        "architecture"
+      ],
+      "Liste des pays visés par ordre de préférence": [
+        "Angleterre",
+        "Royaume-Uni"
+      ],
+      "Villes/Zone": [
+        "Londres"
+      ],
+      "Durée visée du séjour": "5 à 6 ans (jusqu'au diplôme)",
+      "Distance/zone géographique souhaitée (pays, fuseaux, proximité famille).": "prêt(e) à partir longtemps; retour vacances",
+      "Type de campus (urbain/suburbain/rural)": "urbain (vie étudiante, associations)",
+      "Type de climat souhaité": "",
+      "Vie de campus (importance : clubs, fraternités/sororités, résidences, sport universitaire)": "importante (clubs/associations; club de débat + activité sportive)",
+      "Culture/valeurs recherchées (innovation, durabilité, esprit international, religieux*)": "enseignement artistique; petits groupes; possibilité d'exprimer des messages importants avec portée politique; intérêt pour l'architecture gothique",
+      "Besoins spécifiques (aménagements, accessibilité, accompagnement)": "souhait d'une chambre seule; préoccupations sécurité et solitude; stratégies: associations, sorties, visiter"
+    },
+    "Finances & logistique": {
+      "Budget annuel total (frais + logement + vie)": "",
+      "Bourses": {
+        "Eligibilité": [],
+        "Volonté de faire appel à une bourse et laquelle": "Oui"
+      },
+      "Autonomie souhaitée (hébergement campus/ville, restauration)": "souhaite gagner en autonomie; envisage de travailler (week-end ou 3h après cours) ; attention gestion du budget/temps"
+    },
+    "Historique voyages / ouverture internationale (libre)": "Famille: Grèce, Portugal, Vietnam, Thaïlande, Allemagne, Monténégro, Croatie. Colonies: Canada, États-Unis, Angleterre, Corée, Mexique. École: Allemagne (plusieurs fois). Leçon clé: l'organisation est essentielle (équilibre visites/fatigue).",
+    "Objectifs complémentaires (libre)": "Diplôme reconnu en France en cas de retour; intérêt pour projets collaboratifs longs (ex: projets de startup).",
+    "Préférences de vie quotidienne (libre)": "Apprécie les cafés typiques londoniens (ambiance automne/hiver)."
   }
 ]
+
+

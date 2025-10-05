@@ -216,5 +216,227 @@
       "Logement (PMR, places garanties/1re année, coûts, collocations)": "Il existe des équipements adaptés pour les PMR",
       "Proportion d’internationaux, mixité culturelle": "54% d'anglais, 1% d'européens et 45% d'internationaux"
     }
+  },
+    {
+    "Université": "Imperial College London - Economics, Finance and Data Science",
+    "Identification": {
+      "Pays": "Royaume-Uni (Angleterre)",
+      "1 si UE 0 sinon": "0",
+      "région": "Grand Londres",
+      "ville": "Londres"
+    },
+    "Offre académique": {
+      "Majeures": "Aéronotique - Bio-ingénieurie - Chimie - Informatique - Design Engineering - Mathématiques - Physique - Sciences de la vie - Médecine - Business - Finance",
+      "Taille des classes (classe ou amphi, ratio étudiants/enseignants)": "103 étudiants pan an",
+      "Charge horaire (/semaine)": "Full-Time",
+      "Durée du cursus (3 ans ? 5 ans ?)": "3 ans",
+      "Langues d’enseignement": "Anglais",
+      "Double-diplômes, échanges, passerelles, foundation/year 0": "Pas de foundation year à Imperial - Pas d'année à l'étranger ou d'échange de prévu pour ce programme"
+    },
+    "Admissions": {
+      "Exigences bac/IB/A-levels (seuils, matières)": "A-levels : A*AA, A* en maths, A dans 2 autres matières (si possible Maths avancés et/ou éco mais pas obligatoire). Si il y a une matière scientifique il faut passer le pratical endorsment - IB : 39 points dont 7 en maths HL et  6 dans les 2 autres matières en HL- Baccaleuréat : 16 de moyenne avec 16 en Maths, avec l'option Maths Expert et 15 dans l'autre option",
+      "Tests exigés (IELTS)": "IELTS (Academic) : 7 et 6.5 dans toutes les parties - Cambridge English Advanced : 185 et 176 dans toutes les parties - PTE : 69 et 62 dans toutes les parties - TOEFL (iBT) : 100 et 22 dans toutes les parties",
+      "Dossiers spéciaux (portfolio, audition, lettre reco, essai)": "Entretien + Test of Mathematics for University Admission (TMUA)",
+      "Taux d’admission (si dispo) + sélectivité relative": "15% d'admission chez les étudiants anglais - 26 candidatures pours 1 place",
+      "Deadlines (early/regular)": "2026-01-14 00:00:00",
+      "système de candidature (UCAS, Common App, portail maison)": "UCAS"
+    },
+    "Finances": {
+      "Frais de scolarité annuels": "£42,700",
+      "Frais annexes (obligatoires : IELTS, ouverture de dossier, candidature UCAS)": "IELTS : 306 € - UCAS : £27.50 - Potentiellement d'autres frais annexes",
+      "Bourses existantes": "Oui il y en a de tout type"
+    },
+    "Campus": {
+      "Localisation (urbain/rural)": "Urbain (Site South Kensington)",
+      "Climat": "Océanique tempéré : hivers doux, étés modérés",
+      "Logement (PMR, places garanties/1re année, coûts, collocations)": "Aménagements PMR prévus - Prix variants de £5,800 à £15,600 l'année",
+      "Clubs, associations": "Près de 350 clubs",
+      "Services (santé mentale, carrières, accompagnement internationaux)": "Accompgnement pour les personnes en situation de handicap, pour les internationaux",
+      "Accessibilité (PMR, transports, aéroports, depuis la France, etc)": "Aménagements PMR prévus - Plusieurs bus et métro à proximité - 50 minutes de l'aéroport international Heathrow, 1h de  l'aéroport international Gatwick - 40 minutes de la gare de saint pancrasse",
+      "Proportion d’internationaux, mixité culturelle": "48% d'anglais, 11% d'européens, 40% d'internationaux"
+    },
+    "Résultats": {
+      "rang dans les classements internationaux": "QS 2025 : Top 2 (Programme trop jeune pour avoir un classement)",
+      "rang dans les classements nationaux": "The Guardian 2026 : Top 6 - The Complete University Guide 2026 : Top 6 (Programme trop jeune pour avoir un classement)",
+      "Salaires médians et moyens en sortie": "(Programme trop jeune pour avoir un des salaires de sortie)",
+      "Un réseau alumni existe-t-il, si oui depuis quand ?": "Plus de 260,000 alumnis",
+      "Nb d'entreprises partenaires": "Pas de chiffres \"fixe\", la liste évolue. Actuellement 23 partenariats affichés pour la partie Imperial Business"
+    }
+  },
+  {
+    "Université": "Imperial College London - Mathematics with Statistics for Finance",
+    "Identification": {
+      "Pays": "Royaume-Uni (Angleterre)",
+      "1 si UE 0 sinon": "0",
+      "région": "Grand Londres",
+      "ville": "Londres"
+    },
+    "Offre académique": {
+      "Majeures": "Aéronotique - Bio-ingénieurie - Chimie - Informatique - Design Engineering - Mathématiques - Physique - Sciences de la vie - Médecine - Business - Finance",
+      "Taille des classes (classe ou amphi, ratio étudiants/enseignants)": "Cours magistraux + TD en plus petites classes",
+      "Charge horaire (/semaine)": "Full-Time",
+      "Durée du cursus (3 ans ? 5 ans ?)": "3 ans",
+      "Langues d’enseignement": "Anglais",
+      "Double-diplômes, échanges, passerelles, foundation/year 0": "Pas de foundation year à Imperial - Pas d'année à l'étranger ou d'échange de prévu pour ce programme"
+    },
+    "Admissions": {
+      "Exigences bac/IB/A-levels (seuils, matières)": "A-levels : A*A*A*, A* en maths, A* en maths avancées (il peut y avoir des arrangements pour les élèves n'ayant pas choisis l'option maths avancées). En cas d'offre, il faut passer le pratical endorsment - IB : 39 points dont 7 en maths HL et  6 dans les 2 autres matières en HL- Baccaleuréat : 17 de moyenne avec 16 en Maths, avec l'option Maths Expert et 16 dans l'autre option",
+      "Tests exigés (IELTS)": "IELTS (Academic) : 7 et 6.5 dans toutes les parties - Cambridge English Advanced : 185 et 176 dans toutes les parties - PTE : 69 et 62 dans toutes les parties - TOEFL (iBT) : 100 et 22 dans toutes les parties",
+      "Dossiers spéciaux (portfolio, audition, lettre reco, essai)": "Test of Mathematics for University Admission (TMUA)",
+      "Taux d’admission (si dispo) + sélectivité relative": "30% d'admission chez les étudiants anglais - 12 candidatures pours 1 place",
+      "Deadlines (early/regular)": "2026-01-14 00:00:00",
+      "système de candidature (UCAS, Common App, portail maison)": "UCAS"
+    },
+    "Finances": {
+      "Frais de scolarité annuels": "£42,700",
+      "Frais annexes (obligatoires : IELTS, ouverture de dossier, candidature UCAS)": "IELTS : 306 € - UCAS : £27.50 - Potentiellement d'autres frais annexes",
+      "Bourses existantes": "Oui il y en a de tout type"
+    },
+    "Campus": {
+      "Localisation (urbain/rural)": "Urbain (Site South Kensington)",
+      "Climat": "Océanique tempéré : hivers doux, étés modérés",
+      "Logement (PMR, places garanties/1re année, coûts, collocations)": "Aménagements PMR prévus - Prix variants de £5,800 à £15,600 l'année",
+      "Clubs, associations": "Près de 350 clubs",
+      "Services (santé mentale, carrières, accompagnement internationaux)": "Accompgnement pour les personnes en situation de handicap, pour les internationaux",
+      "Accessibilité (PMR, transports, aéroports, depuis la France, etc)": "Aménagements PMR prévus - Plusieurs bus et métro à proximité - 50 minutes de l'aéroport international Heathrow, 1h de  l'aéroport international Gatwick - 40 minutes de la gare de saint pancrasse",
+      "Proportion d’internationaux, mixité culturelle": "48% d'anglais, 11% d'européens, 40% d'internationaux"
+    },
+    "Résultats": {
+      "rang dans les classements internationaux": "QS Mathematics : Top 10",
+      "rang dans les classements nationaux": "The Guardian Mathematics 2026 : Top 4 - The Complete University Guide Mathematics 2026 : Top 4",
+      "Salaires médians et moyens en sortie": "Pas de salaire moyens pour ce programme mais à titre de repère, pour la branche mathématiques, en moyenne après 15 mois : £39,000",
+      "Un réseau alumni existe-t-il, si oui depuis quand ?": "Plus de 260,000 alumnis",
+      "Nb d'entreprises partenaires": "Pas de chiffres \"fixe\", la liste évolue. Actuellement 23 partenariats affichés pour la partie Imperial Business"
+    }
+  },
+  {
+    "Université": "Imperial College London - Computing (Management and Finance)",
+    "Identification": {
+      "Pays": "Royaume-Uni (Angleterre)",
+      "1 si UE 0 sinon": "0",
+      "région": "Grand Londres",
+      "ville": "Londres"
+    },
+    "Offre académique": {
+      "Majeures": "Aéronotique - Bio-ingénieurie - Chimie - Informatique - Design Engineering - Mathématiques - Physique - Sciences de la vie - Médecine - Business - Finance",
+      "Taille des classes (classe ou amphi, ratio étudiants/enseignants)": "Cours magistraux + TD en plus petites classes",
+      "Charge horaire (/semaine)": "Full-Time",
+      "Durée du cursus (3 ans ? 5 ans ?)": "4 ans",
+      "Langues d’enseignement": "Anglais"
+    },
+    "Admissions": {
+      "Exigences bac/IB/A-levels (seuils, matières)": "A-levels : A*A*A, A* en maths, A*A dans 3 autres matières. TIC, Études commerciales, Études générales et Pensée critique ne sont pas acceptées. Sujets recommandés Informatique Autres Mathématiques Physique Sujets utiles Langue ancienne Biologie Chimie Économie Électronique Anglais Littérature Histoire langues Droit Philosophie Politique Psychologie. - IB : 41 points dont 7 en maths HL et 7 dans une autre matière HL pertinente. - Baccaleuréat : 17 de moyenne avec 16 en Maths, avec l'option Maths Expert et 15 dans l'autre option",
+      "Tests exigés (IELTS)": "IELTS (Academic) : 6.5 et 6 dans toutes les parties - Cambridge English Advanced : 176 et 169 dans toutes les parties - PTE : 62 et 56 dans toutes les parties - TOEFL (iBT) : 92 et 20 dans toutes les parties",
+      "Dossiers spéciaux (portfolio, audition, lettre reco, essai)": "Test of Mathematics for University Admission (TMUA)",
+      "Taux d’admission (si dispo) + sélectivité relative": "22% d'admission chez les étudiants anglais - 19 candidatures pours 1 place",
+      "Deadlines (early/regular)": "2026-01-14 00:00:00",
+      "système de candidature (UCAS, Common App, portail maison)": "UCAS"
+    },
+    "Finances": {
+      "Frais de scolarité annuels": "£42,500",
+      "Frais annexes (obligatoires : IELTS, ouverture de dossier, candidature UCAS)": "IELTS : 306 € - UCAS : £27.50 - Potentiellement d'autres frais annexes",
+      "Bourses existantes": "Oui il y en a de tout type"
+    },
+    "Campus": {
+      "Localisation (urbain/rural)": "Urbain (Site South Kensington)",
+      "Climat": "Océanique tempéré : hivers doux, étés modérés",
+      "Logement (PMR, places garanties/1re année, coûts, collocations)": "Aménagements PMR prévus - Prix variants de £5,800 à £15,600 l'année",
+      "Clubs, associations": "Près de 350 clubs",
+      "Services (santé mentale, carrières, accompagnement internationaux)": "Accompgnement pour les personnes en situation de handicap, pour les internationaux",
+      "Accessibilité (PMR, transports, aéroports, depuis la France, etc)": "Aménagements PMR prévus - Plusieurs bus et métro à proximité - 50 minutes de l'aéroport international Heathrow, 1h de  l'aéroport international Gatwick - 40 minutes de la gare de saint pancrasse",
+      "Proportion d’internationaux, mixité culturelle": "48% d'anglais, 11% d'européens, 40% d'internationaux"
+    },
+    "Résultats": {
+      "rang dans les classements internationaux": "QS Computer Science and Information Systems  : Top 22",
+      "rang dans les classements nationaux": "The Guardian Computer Science and Information Systems 2026 : Top 4 - The Complete University Guide Computer Science 2026 : Top 3",
+      "Salaires médians et moyens en sortie": "En moyenne après 15 ans : £70,000",
+      "Un réseau alumni existe-t-il, si oui depuis quand ?": "Plus de 260,000 alumnis",
+      "Nb d'entreprises partenaires": "Pas de chiffres \"fixe\", la liste évolue. Actuellement 23 partenariats affichés pour la partie Imperial Business"
+    }
+  },
+  {
+    "Université": "UCL - International Management",
+    "Identification": {
+      "Pays": "Royaume-Uni (Angleterre)",
+      "1 si UE 0 sinon": "0",
+      "région": "Grand Londres",
+      "ville": "Londres"
+    },
+    "Offre académique": {
+      "Taille des classes (classe ou amphi, ratio étudiants/enseignants)": "Cours magistraux + TD",
+      "Charge horaire (/semaine)": "Full-time",
+      "Durée du cursus (3 ans ? 5 ans ?)": "3 ans - 4 ans si année à l'étranger",
+      "Langues d’enseignement": "Anglais",
+      "Double-diplômes, échanges, passerelles, foundation/year 0": "Pas de year 0 pour ce programme - Possibilité d'effectuer une année à l'étranger ou en industrie (fortement recommandé par l'université), souvent en 3ème année"
+    },
+    "Admissions": {
+      "Exigences bac/IB/A-levels (seuils, matières)": "A-levels : AAA avec une matière de science sociale de préférence - IB : 38 points avec 18 points dans l'ensemble des 3 HL et pas une matière HL sous les 5 points - Baccaleuréat : 15 de moyenne générale",
+      "Tests exigés (IELTS)": "IELTS (Academic) : 7.5 et 7 dans toutes les parties - Cambridge English Advanced : 191 et 180 dans toutes les parties - PTE : 80 et 76 dans toutes les parties - TOEFL (iBT) : 109 et 27/30 en reading and writting et 23/30 en speaking and listening",
+      "Dossiers spéciaux (portfolio, audition, lettre reco, essai)": "Non",
+      "Taux d’admission (si dispo) + sélectivité relative": "Pas disponible",
+      "Deadlines (early/regular)": "2026-01-14 00:00:00",
+      "système de candidature (UCAS, Common App, portail maison)": "UCAS"
+    },
+    "Finances": {
+      "Frais de scolarité annuels": "£39,800",
+      "Frais annexes (obligatoires : IELTS, ouverture de dossier, candidature UCAS)": "IELTS : 306 € - UCAS : £27.50 - Potentiellement un voyage à l'étranger : £1,000 et £1,750",
+      "Bourses existantes": "Oui il y en a de tout type"
+    },
+    "Campus": {
+      "Localisation (urbain/rural)": "Urbain - Canary Wharf",
+      "Climat": "Océanique tempéré : hivers doux, étés modérés",
+      "Logement (PMR, places garanties/1re année, coûts, collocations)": "Chambres adaptées aux PMR - Priorité pour les étudiants de première année - Prix variants de £6,000 à £18,000",
+      "Clubs, associations": "Plus de 300 clubs",
+      "Services (santé mentale, carrières, accompagnement internationaux)": "Accompgnement pour les personnes en situation de handicap, pour les internationaux",
+      "Accessibilité (PMR, transports, aéroports, depuis la France, etc)": "Aménagements PMR prévus - Plusieurs bus et métro à proximité - 45 minutes de l'aéroport international Heathrow, 55 minutes de l'aéroport international Gatwick - 25 minutes de la gare de saint Pancrasse",
+      "Proportion d’internationaux, mixité culturelle": "46% d'anglais, 8% d'européens, 406% d'internationaux"
+    },
+    "Résultats": {
+      "rang dans les classements internationaux": "QS Business & Management Studies 2025: Top 90",
+      "rang dans les classements nationaux": "The Guardian Business & Management 2026 : Top 7 - The Complete University Guide Business & Management Studies 2026 : Top 7",
+      "Salaires médians et moyens en sortie": "(Programme trop jeune pour avoir un des salaires de sortie)",
+      "Un réseau alumni existe-t-il, si oui depuis quand ?": "Plus de 350,000 alumnis",
+      "Nb d'entreprises partenaires": "Plus de 300 entreprises alliées"
+    }
+  },
+  {
+    "Université": "King's College - Accouting & Finance",
+    "Identification": {
+      "Pays": "Royaume-Uni (Angleterre)",
+      "1 si UE 0 sinon": "0",
+      "région": "Grand Londres",
+      "ville": "Londres"
+    },
+    "Offre académique": {
+      "Charge horaire (/semaine)": "Full-time",
+      "Durée du cursus (3 ans ? 5 ans ?)": "3 ans",
+      "Langues d’enseignement": "Anglais"
+    },
+    "Admissions": {
+      "Exigences bac/IB/A-levels (seuils, matières)": "A-levels : A*AA avec un A en maths - IB : 38 points avec 19 points dans l'ensemble des 3 HL et  6 en maths en tant que HL - Baccaleuréat : 16 de moyenne générale avec 16 en maths",
+      "Tests exigés (IELTS)": "IELTS (Academic) : 7 et 6.5 dans toutes les parties - Cambridge English Advanced : 185 et 176 dans toutes les parties - PTE : 69 et 62 dans toutes les parties - TOEFL (iBT) : 100 et 25 en writting et 23 pours le autres parties",
+      "Dossiers spéciaux (portfolio, audition, lettre reco, essai)": "Non",
+      "Taux d’admission (si dispo) + sélectivité relative": "16% d'admission chez les étudiants anglais",
+      "Deadlines (early/regular)": "2026-01-14 00:00:00",
+      "système de candidature (UCAS, Common App, portail maison)": "UCAS"
+    },
+    "Finances": {
+      "Frais de scolarité annuels": "£38,300",
+      "Frais annexes (obligatoires : IELTS, ouverture de dossier, candidature UCAS)": "Oui mais pas de chiffres",
+      "Bourses existantes": "Oui il y en a de tout type"
+    },
+    "Campus": {
+      "Localisation (urbain/rural)": "Urbain",
+      "Climat": "Océanique tempéré : hivers doux, étés modérés",
+      "Logement (PMR, places garanties/1re année, coûts, collocations)": "Prix variants de £6,200 à £25,500",
+      "Clubs, associations": "Plus de 400 clubs",
+      "Services (santé mentale, carrières, accompagnement internationaux)": "Accompgnement pour les personnes en situation de handicap, pour les internationaux",
+      "Accessibilité (PMR, transports, aéroports, depuis la France, etc)": "Plusieurs bus et métros à proximité - 1h minutes de l'aéroport international Heathrow, 50 minutes de l'aéroport international Gatwick - 30 minutes de la gare de saint Pancrasse",
+      "Proportion d’internationaux, mixité culturelle": "61% d'anglais, 8% d'européens, 31% d'internationaux"
+    },
+    "Résultats": {
+      "rang dans les classements internationaux": "QS Accounting & Finance 2025: Top 80",
+      "rang dans les classements nationaux": "The Guardian Accounting & Finance 2026 : Top 14 - The Complete University Guide Accounting & Finance 2026 : Top 12"
+    }
   }
 ]
