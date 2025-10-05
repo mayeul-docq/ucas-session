@@ -5,14 +5,27 @@
 
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--text);font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial}
-.topbar{display:flex;gap:12px;align-items:center;justify-content:space-between;padding:12px 16px;border-bottom:1px solid var(--border);background:#10132aee;backdrop-filter:blur(6px);position:sticky;top:0}
+a{color:var(--accent)}
+
+.topbar{
+  display:flex;gap:12px;align-items:center;justify-content:space-between;
+  padding:12px 16px;border-bottom:1px solid var(--border);
+  background:#10132aee;backdrop-filter:blur(6px);position:sticky;top:0;z-index:10
+}
 .brand{font-weight:700}
 .controls{display:flex;gap:8px}
-.controls input,.controls button{padding:10px 12px;border-radius:10px;border:1px solid var(--border);background:var(--card);color:var(--text)}
+.controls input,.controls button{
+  padding:10px 12px;border-radius:10px;border:1px solid var(--border);
+  background:var(--card);color:var(--text)
+}
 .controls button{cursor:pointer;border-color:var(--accent)}
+.controls input{min-width:220px}
+.controls input#apiKey{min-width:320px}
+
 .container{padding:16px}
 .status{padding:12px 16px;background:#121528;border:1px solid var(--border);border-radius:10px;margin-bottom:16px}
 .muted{color:var(--muted)}
+.small{font-size:12px}
 .hidden{display:none}
 
 .alpha-box{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:10px;margin:10px 0}
@@ -23,4 +36,32 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:ui-sans-serif,s
 .ranking tr:nth-child(even){background:#141735}
 .score{font-weight:700}
 .score.ok{color:var(--ok)} .score.warn{color:var(--warn)} .score.bad{color:var(--bad)}
+
 .footer{padding:12px 16px;border-top:1px solid var(--border);color:var(--muted)}
+
+/* ==== Chat dock (rectangle bas de page) ==== */
+.chat-dock{
+  position:sticky;bottom:0;left:0;right:0;z-index:5;
+  background:linear-gradient(180deg, rgba(10,12,25,0), rgba(10,12,25,.85) 10%, rgba(10,12,25,.95));
+  border-top:1px solid var(--border);padding:12px 16px
+}
+.chat-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
+.chat-log{
+  max-height:260px; overflow:auto; background:var(--card); border:1px solid var(--border);
+  border-radius:10px; padding:10px; display:flex; flex-direction:column; gap:8px
+}
+.msg{display:flex; gap:8px}
+.msg .bubble{
+  padding:8px 10px; border-radius:10px; max-width: 85%; white-space:pre-wrap; word-break:break-word;
+}
+.msg.user .bubble{background:#1a2340}
+.msg.assistant .bubble{background:#151c34}
+.msg.info .bubble{background:#0f1733;color:var(--muted)}
+.msg .meta{font-size:12px;color:var(--muted);margin-left:4px}
+.chat-input-row{display:flex; gap:8px; margin-top:8px}
+.chat-input{
+  flex:1; min-height:56px; resize:vertical; border-radius:10px; border:1px solid var(--border);
+  background:#121528; color:var(--text); padding:10px
+}
+.btn{padding:8px 12px; border-radius:10px; border:1px solid var(--border); background:#121528; color:var(--text); cursor:pointer}
+.btn.primary{border-color:var(--accent)}

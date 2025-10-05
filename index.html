@@ -34,8 +34,21 @@
     </section>
   </main>
 
+  <!-- ==== Panneau de discussion LLM (rectangle bas de page) ==== -->
+  <section class="chat-dock">
+    <div class="chat-header">
+      <span>Assistant profil (LLM)</span>
+      <span class="muted small">Le token saisi est utilisé côté navigateur et n’est pas stocké.</span>
+    </div>
+    <div id="chatLog" class="chat-log"></div>
+    <div class="chat-input-row">
+      <textarea id="chatInput" class="chat-input" placeholder="Décrivez vos préférences, résultats, contraintes, budget… (ex.: « Je vise un campus urbain et je peux préparer l’IELTS 7.0 »)"></textarea>
+      <button id="chatSend" class="btn primary">Envoyer</button>
+    </div>
+  </section>
+
   <footer class="footer">
-    <small>Static UI – charge <code>./data/*.json</code> et <code>./normalized/*.json</code> depuis GitHub Pages.</small>
+    <small>Static UI – charge <code>./data/*.json</code> et <code>./normalized/*.json</code>. Le chat appelle l’API OpenAI si un token est saisi.</small>
   </footer>
 
   <script src="app.js"></script>
