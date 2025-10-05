@@ -11,7 +11,7 @@
     <div class="brand">UNIVIA</div>
     <div class="controls">
       <input id="studentId" placeholder="ID élève" />
-      <input id="apiKey" placeholder="OpenAI API Key (optionnel)" type="password" />
+      <input id="apiKey" placeholder="OpenAI API Key" type="password" />
       <button id="startBtn">Commencer</button>
     </div>
   </header>
@@ -34,21 +34,21 @@
     </section>
   </main>
 
-  <!-- ==== Panneau de discussion LLM (rectangle bas de page) ==== -->
+  <!-- ==== Panneau de discussion guidée par LLM ==== -->
   <section class="chat-dock">
     <div class="chat-header">
       <span>Assistant profil (LLM)</span>
-      <span class="muted small">Le token saisi est utilisé côté navigateur et n’est pas stocké.</span>
+      <span class="muted small">Le modèle pose les questions manquantes et met à jour le profil pour recalculer vos scores.</span>
     </div>
     <div id="chatLog" class="chat-log"></div>
     <div class="chat-input-row">
-      <textarea id="chatInput" class="chat-input" placeholder="Décrivez vos préférences, résultats, contraintes, budget… (ex.: « Je vise un campus urbain et je peux préparer l’IELTS 7.0 »)"></textarea>
+      <textarea id="chatInput" class="chat-input" placeholder="Répondez à la question… (Ctrl/⌘+Entrée pour envoyer)"></textarea>
       <button id="chatSend" class="btn primary">Envoyer</button>
     </div>
   </section>
 
   <footer class="footer">
-    <small>Static UI – charge <code>./data/*.json</code> et <code>./normalized/*.json</code>. Le chat appelle l’API OpenAI si un token est saisi.</small>
+    <small>Interface statique – le chat appelle l’API OpenAI avec le token saisi (non stocké).</small>
   </footer>
 
   <script src="app.js"></script>
