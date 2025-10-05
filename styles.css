@@ -1,67 +1,148 @@
-:root {
-  --bg:#0f1221; --card:#171a2b; --muted:#9aa3b2; --text:#e7eaf0;
-  --accent:#5fd1ff; --border:#2a2e42; --ok:#62d99c; --warn:#ffb95f; --bad:#ff6f6f;
+/* ==== Thème épuré / style Apple-like ==== */
+:root{
+  /* Crème très léger + neutres doux */
+  --bg1:#fbfaf7;           /* crème haut */
+  --bg2:#ffffff;           /* crème bas */
+  --text:#222733;          /* texte principal */
+  --muted:#6b7280;         /* texte atténué */
+  --accent:#183040;        /* couleur des titres/questions */
+  --primary:#111827;       /* boutons primaires sombres */
+  --danger:#e53935;        /* actions dangereuses */
+  --border:#e7e7ea;        /* contours subtils */
+  --card:#ffffff;          /* cartes blanches */
+  --shadow: 0 10px 30px rgba(0,0,0,0.07);
+
+  /* Couleurs score (compatibles avec clair) */
+  --ok:#169c6b;
+  --warn:#c28a2c;
+  --bad:#c74b4b;
 }
 
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--text);font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial}
-a{color:var(--accent)}
-
-.topbar{
-  display:flex;gap:12px;align-items:center;justify-content:space-between;
-  padding:12px 16px;border-bottom:1px solid var(--border);
-  background:#10132aee;backdrop-filter:blur(6px);position:sticky;top:0;z-index:10
+html,body{height:100%}
+body{
+  margin:0;
+  background:linear-gradient(180deg,var(--bg1),var(--bg2));
+  color:var(--text);
+  font:16px/1.5 ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial;
 }
-.brand{font-weight:700}
-.controls{display:flex;gap:8px}
-.controls input,.controls button{
-  padding:10px 12px;border-radius:10px;border:1px solid var(--border);
-  background:var(--card);color:var(--text)
-}
-.controls button{cursor:pointer;border-color:var(--accent)}
-.controls input{min-width:220px}
-.controls input#apiKey{min-width:320px}
+a{color:var(--accent); text-decoration:none}
 
-.container{padding:16px}
-.status{padding:12px 16px;background:#121528;border:1px solid var(--border);border-radius:10px;margin-bottom:16px}
-.muted{color:var(--muted)}
-.small{font-size:12px}
 .hidden{display:none}
+.small{font-size:12px}
+.muted{color:var(--muted)}
+code{background:#f7f7fa; padding:.1rem .35rem; border-radius:.35rem}
 
-.alpha-box{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:10px;margin:10px 0}
-.alpha-box pre{margin:0;color:var(--muted)}
-
-.ranking{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--border);border-radius:10px;overflow:hidden}
-.ranking th,.ranking td{padding:10px;border-bottom:1px solid var(--border);text-align:left}
-.ranking tr:nth-child(even){background:#141735}
-.score{font-weight:700}
-.score.ok{color:var(--ok)} .score.warn{color:var(--warn)} .score.bad{color:var(--bad)}
-
-.footer{padding:12px 16px;border-top:1px solid var(--border);color:var(--muted)}
-
-/* ==== Chat dock ==== */
-.chat-dock{
-  position:sticky;bottom:0;left:0;right:0;z-index:5;
-  background:linear-gradient(180deg, rgba(10,12,25,0), rgba(10,12,25,.85) 10%, rgba(10,12,25,.95));
-  border-top:1px solid var(--border);padding:12px 16px
+/* ==== Topbar minimaliste ==== */
+.topbar.minimal{
+  display:flex; justify-content:space-between; align-items:center;
+  padding:14px 20px; border-bottom:1px solid var(--border);
+  backdrop-filter:saturate(180%) blur(8px);
+  background:rgba(255,255,255,0.6);
 }
-.chat-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
+.topbar .brand{display:flex; align-items:center; gap:10px}
+.topbar .brand-title{font-weight:800; letter-spacing:.2px}
+.topbar .ghost{
+  border:1px solid var(--border); background:#fff; color:var(--text);
+  padding:8px 10px; border-radius:10px; cursor:pointer;
+}
+.topbar .ghost.small{padding:6px 8px; font-size:14px; line-height:1}
+.topbar .actions{display:flex; align-items:center}
+.topbar .actions .logo{width:40px; height:40px; object-fit:contain; display:block}
+
+/* ==== Scène principale / carte ==== */
+.stage-wrap{
+  min-height:calc(100vh - 64px);
+  display:flex; align-items:flex-start; justify-content:center;
+  padding:40px 16px;
+}
+.stage{
+  width:min(980px, 100%); background:var(--card); border:1px solid var(--border); border-radius:20px;
+  box-shadow:var(--shadow); overflow:hidden;
+}
+
+/* ==== Bandeau de statut ==== */
+.status{
+  padding:14px 16px; margin:0;
+  background:#fff; border-bottom:1px solid var(--border);
+}
+
+/* ==== Panneau de contrôles (id, clé, bouton) ==== */
+.controls-panel{padding:16px 16px 4px; display:grid; grid-template-columns: 1fr 1fr; gap:12px}
+.controls-panel .controls-row{display:flex; flex-direction:column; gap:6px}
+.controls-panel .controls-row.right{grid-column: 1 / span 2; display:flex; justify-content:flex-end}
+.controls-panel label{font-size:13px; color:var(--muted)}
+.controls-panel input{
+  padding:10px 12px; border:1px solid var(--border); border-radius:12px; background:#fff; color:var(--text);
+  outline:none; box-shadow:inset 0 1px 1px rgba(0,0,0,0.04);
+}
+button{border:none; border-radius:12px; padding:12px 16px; cursor:pointer}
+button.primary{background:var(--primary); color:#fff}
+button.ghost{background:#fff; color:#111; border:1px solid var(--border)}
+button.danger{background:var(--danger); color:#fff}
+
+/* ==== Résultats / Classement ==== */
+.section-title{padding:18px 22px 0; margin:0; color:var(--accent); font-weight:800; letter-spacing:.2px}
+.alpha-box{
+  margin:14px 16px; padding:12px; border:1px solid var(--border); border-radius:14px; background:#fff;
+}
+.alpha-box h3{margin:0 0 8px 0; font-size:16px}
+.alpha-box pre{margin:0; color:#394457}
+
+.ranking{
+  width:calc(100% - 32px); margin:0 16px 18px; border-collapse:separate; border-spacing:0;
+  background:#fff; border:1px solid var(--border); border-radius:14px; overflow:hidden;
+}
+.ranking th,.ranking td{padding:12px; border-bottom:1px solid var(--border); text-align:left}
+.ranking thead th{background:#f7f7fb; font-weight:700; color:#364154}
+.ranking tr:last-child td{border-bottom:none}
+.ranking tr:nth-child(even) td{background:#fafbff}
+
+.score{font-weight:800}
+.score.ok{color:var(--ok)}
+.score.warn{color:var(--warn)}
+.score.bad{color:var(--bad)}
+
+/* ==== Footer ==== */
+.footer{
+  padding:12px 16px; color:var(--muted);
+  border-top:1px solid var(--border); background:rgba(255,255,255,0.6)
+}
+
+/* ==== Chat dock (rectangle bas de page, clair) ==== */
+.chat-dock{
+  position:sticky; bottom:0; left:0; right:0; z-index:5;
+  background:linear-gradient(180deg, rgba(255,255,255,0), rgba(255,255,255,.92) 12%, rgba(255,255,255,.96));
+  border-top:1px solid var(--border); padding:12px 16px;
+  backdrop-filter:saturate(180%) blur(6px);
+}
+.chat-header{display:flex; align-items:center; justify-content:space-between; margin-bottom:8px}
 .chat-log{
-  max-height:260px; overflow:auto; background:var(--card); border:1px solid var(--border);
-  border-radius:10px; padding:10px; display:flex; flex-direction:column; gap:8px
+  max-height:260px; overflow:auto; background:#fff; border:1px solid var(--border);
+  border-radius:12px; padding:10px; display:flex; flex-direction:column; gap:8px
 }
 .msg{display:flex; gap:8px}
 .msg .bubble{
   padding:8px 10px; border-radius:10px; max-width: 85%; white-space:pre-wrap; word-break:break-word;
+  border:1px solid var(--border); background:#fff;
 }
-.msg.user .bubble{background:#1a2340}
-.msg.assistant .bubble{background:#151c34}
-.msg.info .bubble{background:#0f1733;color:var(--muted)}
-.msg .meta{font-size:12px;color:var(--muted);margin-left:4px}
+.msg.user .bubble{background:#f8fafc}
+.msg.assistant .bubble{background:#ffffff}
+.msg.info .bubble{background:#fbfbfe; color:var(--muted)}
 .chat-input-row{display:flex; gap:8px; margin-top:8px}
 .chat-input{
-  flex:1; min-height:56px; resize:vertical; border-radius:10px; border:1px solid var(--border);
-  background:#121528; color:var(--text); padding:10px
+  flex:1; min-height:56px; resize:vertical; border-radius:12px; border:1px solid var(--border);
+  background:#fff; color:var(--text); padding:10px;
 }
-.btn{padding:8px 12px; border-radius:10px; border:1px solid var(--border); background:#121528; color:var(--text); cursor:pointer}
-.btn.primary{border-color:var(--accent)}
+.btn{padding:10px 14px; border-radius:12px; border:1px solid var(--border); background:#fff; color:var(--text); cursor:pointer}
+.btn.primary{border-color:#d3d7e6; background:var(--primary); color:#fff}
+
+/* ==== Loader générique (si tu l’utilises) ==== */
+.spinner {
+  width: 42px; height: 42px;
+  border: 4px solid rgba(0,0,0,.06);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: spin 0.9s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }

@@ -2,55 +2,97 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8" />
-  <title>UNIVIA – Compatibilité universités</title>
+  <meta http-equiv="Cache-Control" content="no-store, max-age=0, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <link rel="stylesheet" href="style.css" />
+  <title>Orientation</title>
+
+  <!-- ⬆️ Incrémente à chaque déploiement si tu veux forcer le refresh -->
+  <script>window.APP_VERSION="2025-09-11-06";</script>
+
+  <!-- On conserve le nom de fichier existant pour ne pas casser l'arbo -->
+  <link rel="stylesheet" href="./style.css?v=2025-09-11-06" />
+  <!-- (optionnel) export image dernière page si tu l’utilises plus tard -->
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
 </head>
 <body>
-  <header class="topbar">
-    <div class="brand">UNIVIA</div>
-    <div class="controls">
-      <input id="studentId" placeholder="ID élève" />
-      <input id="apiKey" placeholder="OpenAI API Key" type="password" />
-      <button id="startBtn">Commencer</button>
+  <!-- Topbar minimaliste, visuel “Apple-like” -->
+  <header class="topbar minimal">
+    <div class="brand">
+      <span class="brand-title">🎒 Orientation</span>
+      <!-- Bouton reset (facultatif). Laisse-le si tu veux l'utiliser plus tard -->
+      <button id="btnReset" class="ghost small" title="Réinitialiser">↺</button>
+    </div>
+    <div class="actions">
+      <!-- Logo renard : place l’image dans ./assets/renard_univia.png -->
+      <img src="./assets/renard_univia.png?v=2025-09-11-06" alt="Univia" class="logo">
     </div>
   </header>
 
-  <main class="container">
-    <section id="status" class="status muted">Saisissez l’ID élève et le token puis cliquez « Commencer ».</section>
+  <main id="app" class="stage-wrap">
+    <!-- Carte unique contenant l’UI existante (statut + classement) -->
+    <section class="stage card" id="mainStage">
+      <!-- Bandeau status (messages au-dessus du tableau) -->
+      <section id="status" class="status muted">Saisis l’ID élève et le token puis clique « Commencer ».</section>
 
-    <section id="results" class="hidden">
-      <h2>Classement des universités (par score de compatibilité)</h2>
-      <div class="alpha-box">
-        <h3>Poids (alpha)</h3>
-        <pre id="alphaView"></pre>
-      </div>
-      <table class="ranking">
-        <thead>
-          <tr><th>#</th><th>Université (id)</th><th>Score</th><th>Détails (features utilisées)</th></tr>
-        </thead>
-        <tbody id="rankingBody"></tbody>
-      </table>
+      <!-- Contrôles (on conserve les mêmes IDs pour compatibilité avec app.js) -->
+      <section class="controls-panel">
+        <div class="controls-row">
+          <label for="studentId">ID élève</label>
+          <input id="studentId" placeholder="ex. stu_demo" />
+        </div>
+        <div class="controls-row">
+          <label for="apiKey">OpenAI API Key (optionnel)</label>
+          <input id="apiKey" placeholder="sk-..." type="password" />
+        </div>
+        <div class="controls-row right">
+          <button id="startBtn" class="primary">Commencer</button>
+        </div>
+      </section>
+
+      <!-- Résultats (classement) -->
+      <section id="results" class="hidden">
+        <h2 class="section-title">Classement des universités (par score de compatibilité)</h2>
+
+        <div class="alpha-box">
+          <h3>Poids (alpha)</h3>
+          <pre id="alphaView"></pre>
+        </div>
+
+        <table class="ranking">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Université (id)</th>
+              <th>Score</th>
+              <th>Détails (features utilisées)</th>
+            </tr>
+          </thead>
+          <tbody id="rankingBody"></tbody>
+        </table>
+      </section>
     </section>
   </main>
 
-  <!-- ==== Panneau de discussion guidée par LLM ==== -->
+  <!-- ===== Panneau de discussion LLM persistent (bas de page) ===== -->
   <section class="chat-dock">
     <div class="chat-header">
       <span>Assistant profil (LLM)</span>
-      <span class="muted small">Le modèle pose les questions manquantes et met à jour le profil pour recalculer vos scores.</span>
+      <span class="muted small">Le token saisi est utilisé côté navigateur et n’est pas stocké.</span>
     </div>
     <div id="chatLog" class="chat-log"></div>
     <div class="chat-input-row">
-      <textarea id="chatInput" class="chat-input" placeholder="Répondez à la question… (Ctrl/⌘+Entrée pour envoyer)"></textarea>
+      <textarea id="chatInput" class="chat-input" placeholder="Décris tes préférences, ton budget, tes contraintes… (ex.: « campus urbain, IELTS 7.0, budget 40k€ »)"></textarea>
       <button id="chatSend" class="btn primary">Envoyer</button>
     </div>
   </section>
 
   <footer class="footer">
-    <small>Interface statique – le chat appelle l’API OpenAI avec le token saisi (non stocké).</small>
+    <small>Static UI — lit <code>./data/*.json</code> et <code>./normalized/*.json</code>. Le chat appelle OpenAI si un token est saisi.</small>
   </footer>
 
-  <script src="app.js"></script>
+  <!-- On conserve ton script existant -->
+  <script src="./app.js?v=2025-09-11-06"></script>
 </body>
 </html>
