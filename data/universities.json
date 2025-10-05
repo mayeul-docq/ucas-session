@@ -1,0 +1,220 @@
+[
+  {
+    "Université": "Glasgow School of Art",
+    "Identification": {
+      "Pays": "Royaume-Uni (Écosse)",
+      "1 si UE 0 sinon": "0",
+      "région": "Glasgow",
+      "ville": "Glasgow"
+    },
+    "Offre académique": {
+      "Majeures": "Design - Architecture - Fine Art - Modelling - VR",
+      "Taille des classes (classe ou amphi, ratio étudiants/enseignants)": "Cours en studio",
+      "Charge horaire (/semaine)": "Full-Time - 35/40 heures - Cours + Travail personnel",
+      "Durée du cursus (3 ans ? 5 ans ?)": "4 ans en full-time et 5 ans en part-time",
+      "Langues d’enseignement": "Anglais"
+    },
+    "Admissions": {
+      "Exigences bac/IB/A-levels (seuils, matières)": "A-levels : ABB en général, BBCC minimum ou BBC minimum, incluant maths ou physique - GCSE English : A ou 7 - IB : 30 points dont 18 en HL avec anglais et maths dans les matières",
+      "Tests exigés (IELTS)": "IELTS : 6.5 et un minimum de 5.5 pour toutes les parties",
+      "Dossiers spéciaux (portfolio, audition, lettre reco, essai)": "Portfolio",
+      "Taux d’admission (si dispo) + sélectivité relative": "None",
+      "Deadlines (early/regular)": "Inscription UCAS : 14/01/2026 - Portfolio sur le site : 21/01/2026",
+      "système de candidature (UCAS, Common App, portail maison)": "Postuler via UCAS mais envoyer le Portfolio sur le site, après avoir reçu un mail invitant l'étudiant à le faire, 2 jours après s'être inscrit sur UCAS"
+    },
+    "Finances": {
+      "Frais de scolarité annuels": "£24,350 avec un dépôt de £6,100 après avoir accepté une offre",
+      "Frais annexes (obligatoires : IELTS, ouverture de dossier, candidature UCAS)": "IELTS : 306 € - UCAS : £27.50",
+      "Bourses existantes": "Non (en tout cas je trouve pas)"
+    },
+    "Campus": {
+      "Localisation (urbain/rural)": "Urbain",
+      "Climat": "Le climat de Glasgow est de type océanique, marqué par des hivers modérés et des étés frais. L'humidité est importante toute l'année.",
+      "Logement (PMR, places garanties/1re année, coûts, collocations)": "Pas de logements étudiants",
+      "Clubs, associations": "Association d'étudiants avec des clubs : https://www.thegsasa.com/groups?parent_link=get-involved-menu-wrapper ",
+      "Services (santé mentale, carrières, accompagnement internationaux)": "Conseils hébergement, santé, fiancement, soutient pour les étudiants internationaux",
+      "Accessibilité (PMR, transports, aéroports, depuis la France, etc)": "Accès et soutient aux personnes à mobilité réduite - Station de bus et de métro à proximité (moins de 5 minutes à pied), 50 minutes en transports de l'aéroport de Glasgow",
+      "Proportion d’internationaux, mixité culturelle": "64% d'anglais, 7% d'européens et 29% d'internationaux"
+    },
+    "Résultats": {
+      "rang dans les classements internationaux": "QS Art & Design 2025 : 12ème",
+      "rang dans les classements nationaux": "Top 5 UK",
+      "Salaires médians et moyens en sortie": "Moyennes après 15 mois : £23,000",
+      "Un réseau alumni existe-t-il, si oui depuis quand ?": "20,000 alumnis",
+      "Nb d'entreprises partenaires": "Pas de partenariats, mais plutôt des annonces de projets et des accords spécifiques"
+    }
+  },
+  {
+    "Université": "The Robert Gordon University",
+    "Identification": {
+      "Pays": "Royaume-Uni (Ecosse)",
+      "1 si UE 0 sinon": "0",
+      "région": "Aberdeen",
+      "ville": "Aberdeen"
+    },
+    "Offre académique": {
+      "Majeures": "Ingénieurie - Architecture - Informatique - Sciences de la vie - Création - Santé - Social - Business",
+      "Taille des classes (classe ou amphi, ratio étudiants/enseignants)": "Studio d'architecture et Ateliers de modélisation",
+      "Charge horaire (/semaine)": "Full-Time - 35/40 heures - Cours + Travail personnel",
+      "Durée du cursus (3 ans ? 5 ans ?)": "6 ans",
+      "Langues d’enseignement": "Anglais",
+      "Double-diplômes, échanges, passerelles, foundation/year 0": "Pas de Year 0 classique, mais plutôt une année 1 avec passerelle"
+    },
+    "Admissions": {
+      "Exigences bac/IB/A-levels (seuils, matières)": "A-Levels : BCC avec maths ou une autre matière scientifique et une matière d'art de préférence - GCSE English : 6 ou B - IB : 28 points avec Anglais, maths ou autres matière scientifique et de préférence Visual Arts en HL avec minimum 5 points chacun",
+      "Tests exigés (IELTS)": "IELTS : 6.5",
+      "Dossiers spéciaux (portfolio, audition, lettre reco, essai)": "Portfolio : Demandé pour les étudiants n'ayant pas de qualification supérieure en art",
+      "Taux d’admission (si dispo) + sélectivité relative": "None",
+      "Deadlines (early/regular)": "UCAS : 14/01/2026",
+      "système de candidature (UCAS, Common App, portail maison)": "UCAS"
+    },
+    "Finances": {
+      "Frais de scolarité annuels": "£18,300",
+      "Frais annexes (obligatoires : IELTS, ouverture de dossier, candidature UCAS)": "IELTS : 306 € - UCAS : £27.50 - Matériels : £100 par an - Voyage pédagogique : £200-250 par an - Visite de sites : £100 par an - Impressions : £70 par an",
+      "Bourses existantes": "Oui"
+    },
+    "Campus": {
+      "Localisation (urbain/rural)": "Urbain",
+      "Climat": "Climat océanique frais & venteux : étés doux (max moyens ~16–17 °C), hivers frais (max ~6 °C), pluies étalées (pic en octobre-novembre).",
+      "Logement (PMR, places garanties/1re année, coûts, collocations)": "Pas d'accès PMR dans les logements - Plusieurs type de logements (avec ou sans salle de bain attenante, nombre de semaines de location) - Coûts : Entre £4,450 et £8,500 - Pas de collocation",
+      "Clubs, associations": "Il y a une association étudiante, mais pas de clubs",
+      "Services (santé mentale, carrières, accompagnement internationaux)": "Aide pourles accès santé (médecins, dentiste, ...) - Aide pour les démarches administratives (Visa, ...) - ",
+      "Accessibilité (PMR, transports, aéroports, depuis la France, etc)": "Soutient pour les PMR - Lignes de bus à proximité - 1h15 de l'aéroport ",
+      "Proportion d’internationaux, mixité culturelle": "71% d'anglais, 5% d'européens et 24% d'internationaux"
+    },
+    "Résultats": {
+      "rang dans les classements internationaux": "QS : Entre 950 et 1000",
+      "rang dans les classements nationaux": "Guardian Architecture : n° 26",
+      "Salaires médians et moyens en sortie": "Moyenne après 15 mois : £26,500",
+      "Un réseau alumni existe-t-il, si oui depuis quand ?": "80 000 alumnis",
+      "Nb d'entreprises partenaires": "Pas de partenariats, mais plutôt des annonces de projets et des accords spécifiques"
+    }
+  },
+  {
+    "Université": "Birmingham City University",
+    "Identification": {
+      "Pays": "Royaume-Uni (Angleterre)",
+      "1 si UE 0 sinon": "0",
+      "région": "Midlands de l'Ouest",
+      "ville": "Birmingham"
+    },
+    "Offre académique": {
+      "Majeures": "Finance - Théatre - Architecture - Art - Design - Management - Business - Informatique - Ingénieurie - Anglais - Fashion - Jeux vidéos - Santé - Droit - Marketing - Joaillerie - Journalisme - Musique - Infirmerie - Psychologie - Sociologie - Criminologie - Sport - Sciences de la vie",
+      "Taille des classes (classe ou amphi, ratio étudiants/enseignants)": "17.8 étudiants par prof en moyenne dans l'université - Pour l'architecture, cours studio-centrés",
+      "Charge horaire (/semaine)": "Full-Time - 35/40 heures - Cours + Travail personnel",
+      "Durée du cursus (3 ans ? 5 ans ?)": "3 ans",
+      "Langues d’enseignement": "Anglais",
+      "Double-diplômes, échanges, passerelles, foundation/year 0": "Il existe une year 0 - Échanges possibles pendant un semestre à l'étranger - "
+    },
+    "Admissions": {
+      "Exigences bac/IB/A-levels (seuils, matières)": "A-levels : AAB - IB : 34 points",
+      "Tests exigés (IELTS)": "IELTS : 6",
+      "Dossiers spéciaux (portfolio, audition, lettre reco, essai)": "Portfolio demandé",
+      "Taux d’admission (si dispo) + sélectivité relative": "87% d'admission",
+      "Deadlines (early/regular)": "2026-01-29 00:00:00",
+      "système de candidature (UCAS, Common App, portail maison)": "UCAS"
+    },
+    "Finances": {
+      "Frais de scolarité annuels": "£18,570",
+      "Frais annexes (obligatoires : IELTS, ouverture de dossier, candidature UCAS)": "IELTS : 306 € - UCAS : £27.50 - Vêtements de protection : £30 - Outils : £100-150",
+      "Bourses existantes": "Oui"
+    },
+    "Campus": {
+      "Localisation (urbain/rural)": "Urbain",
+      "Climat": "Hivers frais et étés doux/tempérés ; précipitations réparties toute l’année",
+      "Logement (PMR, places garanties/1re année, coûts, collocations)": "Il existe des chambres adaptées aux PMR -  Plusieurs type de logements : Entre £3,300 et £10,700",
+      "Clubs, associations": "BDE + Clubs divers",
+      "Services (santé mentale, carrières, accompagnement internationaux)": "Service d'accompagnement santé mental, bien-être, handicap, carrière, étudiants internationaux, logement",
+      "Accessibilité (PMR, transports, aéroports, depuis la France, etc)": "Bibliothèque accessible pour les PMR - Bus et tram à proximité - Aéroport international à 45 minutes",
+      "Proportion d’internationaux, mixité culturelle": "83% d'anglais, 1% d'européens, 16% d'internationaux"
+    },
+    "Résultats": {
+      "rang dans les classements internationaux": "QS : Entre 1001 et 1200",
+      "rang dans les classements nationaux": "Guardian Architecture : Top 32 - The Complete University Guide Architecture : Top 30",
+      "Salaires médians et moyens en sortie": "Moyenne après 15 mois : £24,000",
+      "Un réseau alumni existe-t-il, si oui depuis quand ?": "Plus de 200,000 alumnis",
+      "Nb d'entreprises partenaires": "Plus de 100 agences d'architectures"
+    }
+  },
+  {
+    "Université": "Cardiff University",
+    "Identification": {
+      "Pays": "Royaume-Uni (Pays de Galles)",
+      "1 si UE 0 sinon": "0",
+      "région": "South Glamorgan",
+      "ville": "Cardiff"
+    },
+    "Offre académique": {
+      "Majeures": "Architecture - Finance - Informatique - Droit - Ingénieurie - Physique - Maths - Chimie - Biologiie  - Santé - Relations internationales - Journalisme - Histoire - Théologie - Lettres",
+      "Taille des classes (classe ou amphi, ratio étudiants/enseignants)": "Studio-centré, petits groupes, tutorats individuels",
+      "Charge horaire (/semaine)": "Full-Time - 35/40 heures - Cours + Travail personnel",
+      "Durée du cursus (3 ans ? 5 ans ?)": "3 ans",
+      "Langues d’enseignement": "Anglais",
+      "Double-diplômes, échanges, passerelles, foundation/year 0": "Il existe une year 0 - Échanges possibles pendant un semestre à l'étranger - Pas de double diplôme pour l'architecture"
+    },
+    "Admissions": {
+      "Exigences bac/IB/A-levels (seuils, matières)": "A-levels : AAA ou AAB - IB : 36-34 poinst en tout, avec au moins une matière HL à 6 points - Baccalauréat : 13",
+      "Tests exigés (IELTS)": "IELTS : 6.5 avec un minimum de 5.5 dans chaque catégorie",
+      "Dossiers spéciaux (portfolio, audition, lettre reco, essai)": "Portfolio demandé si pas d'antécédant pour les étudiants n'ayant pas d'antécédants dans des études d'art et de design",
+      "Taux d’admission (si dispo) + sélectivité relative": "77% d'admission",
+      "Deadlines (early/regular)": "UCAS : 14 janvier 2026",
+      "système de candidature (UCAS, Common App, portail maison)": "UCAS"
+    },
+    "Finances": {
+      "Frais de scolarité annuels": "£29,450",
+      "Frais annexes (obligatoires : IELTS, ouverture de dossier, candidature UCAS)": "Frais annexes globalement couverts par l'université",
+      "Bourses existantes": "Oui"
+    },
+    "Campus": {
+      "Localisation (urbain/rural)": "Urbain",
+      "Climat": "Climat océanique tempéré, été doux, hivers frais, pluies réparties toute l'année",
+      "Logement (PMR, places garanties/1re année, coûts, collocations)": "Chambres adaptées au PMR et aux personnes malentandantes - Plusieurs types de logements : Entre £5,100 et £7,800",
+      "Clubs, associations": "230 clubs - 71 équipes de sport",
+      "Services (santé mentale, carrières, accompagnement internationaux)": "Service d'accompagnement santé mental, bien-être, handicap, carrière, étudiants internationaux, logement",
+      "Accessibilité (PMR, transports, aéroports, depuis la France, etc)": "Il esxite des aménagements possibles pour les PMR - Bus et gare à proximité - Aéroport international à 1h30 en transport",
+      "Proportion d’internationaux, mixité culturelle": "83% d'anglais, 2% d'européens, 18% d'internationaux"
+    },
+    "Résultats": {
+      "rang dans les classements internationaux": "QS Arts and Humanity : Top 151",
+      "rang dans les classements nationaux": "Guardian Architecture : Top 12 - The Complete University Guide Architecture : Top 6",
+      "Salaires médians et moyens en sortie": "Moyenne après 15 mois : £28,000",
+      "Un réseau alumni existe-t-il, si oui depuis quand ?": "Près de 205,000 alumnis - Réseaux existant depuis 1889",
+      "Nb d'entreprises partenaires": "Pas d'accord à proporement parlé, mais plutôt des partenariats académiques : plus de 140"
+    }
+  },
+  {
+    "Université": "University of East London",
+    "Identification": {
+      "Pays": "Royaume-Uni (Angleterre)",
+      "1 si UE 0 sinon": "0",
+      "région": "Grand Londres",
+      "ville": "Londres"
+    },
+    "Offre académique": {
+      "Majeures": "Architecture et Design, Biosciences, Informatique et AI, Ingénieurie, Business, Droit, Education, Santé, Sport & Bioscience, Psychologie, Sciences Sociales, Arts et Industries digitales, Media, Arts",
+      "Taille des classes (classe ou amphi, ratio étudiants/enseignants)": "Studio-centré, petits groupes, tutorats individuels",
+      "Charge horaire (/semaine)": "Full-Time - 35/40 heures - Cours + Travail personnel",
+      "Durée du cursus (3 ans ? 5 ans ?)": "3 ans",
+      "Langues d’enseignement": "Anglais",
+      "Double-diplômes, échanges, passerelles, foundation/year 0": "Il existe une foundation year - Pas de double-diplôme pour l'architecture - Possibilité d'échanges"
+    },
+    "Admissions": {
+      "Exigences bac/IB/A-levels (seuils, matières)": "A-levels : BBB - IB : 24 points avec un minimum de 15 points dans les matières HL",
+      "Tests exigés (IELTS)": "IELTS : 5.5",
+      "Dossiers spéciaux (portfolio, audition, lettre reco, essai)": "Portfolio + Entretien pour présenter le portfolio",
+      "Deadlines (early/regular)": "2026-01-29 00:00:00",
+      "système de candidature (UCAS, Common App, portail maison)": "UCAS"
+    },
+    "Finances": {
+      "Frais de scolarité annuels": "£15,560",
+      "Frais annexes (obligatoires : IELTS, ouverture de dossier, candidature UCAS)": "IELTS : 306 € - UCAS : £27.50 - Matériels - Voyage pédagogique - Visite de sites - Impressions",
+      "Bourses existantes": "Oui"
+    },
+    "Campus": {
+      "Localisation (urbain/rural)": "Urbain",
+      "Climat": "Climat océanique tempéré, hivers frais, étés modérés",
+      "Logement (PMR, places garanties/1re année, coûts, collocations)": "Il existe des équipements adaptés pour les PMR",
+      "Proportion d’internationaux, mixité culturelle": "54% d'anglais, 1% d'européens et 45% d'internationaux"
+    }
+  }
+]

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <title>UNIVIA – Compatibilité universités</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">UNIVIA</div>
+    <div class="controls">
+      <input id="studentId" placeholder="ID élève" />
+      <input id="apiKey" placeholder="OpenAI API Key (optionnel)" type="password" />
+      <button id="startBtn">Commencer</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="status" class="status muted">Saisissez l’ID élève et le token puis cliquez « Commencer ».</section>
+
+    <section id="results" class="hidden">
+      <h2>Classement des universités (par score de compatibilité)</h2>
+      <div class="alpha-box">
+        <h3>Poids (alpha)</h3>
+        <pre id="alphaView"></pre>
+      </div>
+      <table class="ranking">
+        <thead>
+          <tr><th>#</th><th>Université (id)</th><th>Score</th><th>Détails (features utilisées)</th></tr>
+        </thead>
+        <tbody id="rankingBody"></tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <small>Static UI – charge <code>./data/*.json</code> et <code>./normalized/*.json</code> depuis GitHub Pages.</small>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
