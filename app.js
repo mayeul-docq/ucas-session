@@ -1,22 +1,23 @@
+// ====== VERSION CACHE-BUSTER ======
+const V = (window.APP_VERSION || Date.now());
+
 // ====== CONFIG SCORING ======
-// Vecteur d'alphas : poids par feature (modifie ici pour ajuster l'importance)
 const ALPHA = {
-  country_match:            0.20,  // université dans les pays ciblés
-  language_match:           0.20,  // langue(s) enseignement ∩ langues élève
-  campus_setting_match:     0.20,  // campus.setting == préférence élève
-  major_match:              0.20,  // major université ∈ domaines visés
-  application_system_match: 0.10,  // système de candidature désiré
-  accreditation_match:      0.10   // accréditation désirée ∩ université
+  country_match:            0.20,
+  language_match:           0.20,
+  campus_setting_match:     0.20,
+  major_match:              0.20,
+  application_system_match: 0.10,
+  accreditation_match:      0.10
 };
 
-// Paramètres génériques si le profil ne précise pas tout
 const DEFAULTS = {
   desired_majors: ["architecture"],
   desired_accreditations: ["RIBA","ARB"],
-  desired_application_system: null // "UCAS" si tu veux forcer
+  desired_application_system: null
 };
 
-// ====== OUTILS GÉNÉRAUX ======
+// ====== OUTILS ======
 const $ = sel => document.querySelector(sel);
 function asArray(x){ if (!x) return []; return Array.isArray(x) ? x : [x]; }
 function snake(s){ return (s||"").toString().trim().toLowerCase().replace(/[^\w]+/g,"_"); }
@@ -27,8 +28,10 @@ function intersect(a, b){
   return false;
 }
 function loadJson(path){
-  return fetch(path, {cache: "no-store"}).then(async r => {
-    if(!r.ok){ throw new Error(`Fetch failed ${r.status} on ${path}`); }
+  // Ajoute ?v=... pour casser le cache sur Pages/clients
+  const url = path.includes("?") ? `${path}&v=${V}` : `${path}?v=${V}`;
+  return fetch(url, {cache: "no-store"}).then(async r => {
+    if(!r.ok){ throw new Error(`Fetch failed ${r.status} on ${url}`); }
     return r.json();
   });
 }
@@ -110,7 +113,7 @@ function computeCompatibility(student, uni){
   return { score, usedFeatures };
 }
 
-// ====== ÉTAT GLOBAL (chargé depuis les JSON) ======
+// ====== ÉTAT GLOBAL ======
 const elStatus = $("#status");
 const elResults = $("#results");
 const elAlphaView = $("#alphaView");
@@ -119,9 +122,9 @@ const elBody = $("#rankingBody");
 let SESSION = {
   studentId: null,
   apiKey: null,
-  studentNorm: null,   // objet élève normalisé courant (muté par chat)
-  universities: [],    // liste normalisée
-  scored: []           // dernier classement
+  studentNorm: null,
+  universities: [],
+  scored: []
 };
 
 function showAlpha(){ elAlphaView.textContent = JSON.stringify(ALPHA, null, 2); }
@@ -164,7 +167,8 @@ async function start(){
   try{
     const [studentsRaw, studentsNormStore, unisNormStore] = await Promise.all([
       loadJson("./data/students.json"),
-      loadJson("./normalized/normalized_students.json").catch(()=> loadJson("./normalized/students_normalized.json")), // fallback nom
+      // Fallbacks si tu as d’autres noms en prod
+      loadJson("./normalized/normalized_students.json").catch(()=> loadJson("./normalized/students_normalized.json")),
       loadJson("./normalized/normalized_universities.json").catch(()=> loadJson("./normalized/universities_normalized.json"))
     ]);
 
@@ -212,11 +216,10 @@ function escapeHtml(s){ return (s||"").replace(/[&<>"']/g, m => ({'&':'&amp;','<
 async function onChatSend(){
   const msg = chatInput.value.trim();
   if(!msg){ return; }
-  if(!SESSION.studentNorm){ appendMsg("info","Commencez par charger un élève (bouton « Commencer »)."); return; }
+  if(!SESSION.studentNorm){ appendMsg("info","Commence par charger un élève (bouton « Commencer »)."); return; }
   appendMsg("user", msg);
   chatInput.value = "";
 
-  // Appel OpenAI si une clé est fournie
   const key = SESSION.apiKey || sessionStorage.getItem("OPENAI_API_KEY") || "";
   if(!key){
     appendMsg("assistant", "Aucune clé fournie. Le chat nécessite un token OpenAI (champ en haut).");
@@ -225,13 +228,8 @@ async function onChatSend(){
 
   try{
     const patch = await callOpenAIForPatch(key, msg, SESSION.studentNorm);
-    // Affiche résumé du patch
     appendMsg("assistant", "Mise à jour proposée :\n" + JSON.stringify(patch, null, 2));
-
-    // Applique le patch JSON (merge superficiel + chemins connus)
     applyStudentPatch(SESSION.studentNorm, patch);
-
-    // Recalcule et réaffiche
     recomputeAndRender();
   }catch(err){
     console.error(err);
@@ -239,10 +237,9 @@ async function onChatSend(){
   }
 }
 
-// Appel direct à l’API OpenAI depuis le navigateur (le token est saisi par l’utilisateur)
 async function callOpenAIForPatch(apiKey, userMessage, currentStudent){
   const system = `
-Tu es un assistant qui met à jour un profil élève normalisé (schéma ci-dessous). 
+Tu es un assistant qui met à jour un profil élève normalisé (schéma ci-dessous).
 Tu renvoies UNIQUEMENT un JSON avec la clé "patch", dont la valeur est un objet partiel
 à fusionner dans le profil existant. N'ajoute AUCUNE autre clé en dehors du "patch".
 
@@ -281,7 +278,7 @@ Contraintes:
     ]
   };
 
-  const res = await fetch("https://api.openai.com/v1/chat/completions", {
+  const res = await fetch(`https://api.openai.com/v1/chat/completions?v=${V}`, {
     method: "POST",
     headers: { "Content-Type":"application/json", "Authorization": `Bearer ${apiKey}` },
     body: JSON.stringify(payload)
@@ -297,9 +294,7 @@ Contraintes:
   return parsed.patch || {};
 }
 
-// applique un patch superficiel (merge) + prise en compte de chemins communs
 function applyStudentPatch(student, patch){
-  // merge récursif léger
   function merge(dst, src){
     for(const [k,v] of Object.entries(src||{})){
       if(v && typeof v === "object" && !Array.isArray(v)){

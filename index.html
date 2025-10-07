@@ -8,35 +8,49 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Orientation</title>
 
-  <!-- ⬆️ Incrémente à chaque déploiement si tu veux forcer le refresh -->
-  <script>window.APP_VERSION="2025-09-11-06";</script>
+  <!-- ⬆️ Incrémente à chaque déploiement pour invalider le cache -->
+  <script>window.APP_VERSION = "2025-10-07-01";</script>
 
-  <!-- On conserve le nom de fichier existant pour ne pas casser l'arbo -->
-  <link rel="stylesheet" href="./style.css?v=2025-09-11-06" />
-  <!-- (optionnel) export image dernière page si tu l’utilises plus tard -->
-  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+  <!-- CSS versionné -->
+  <link rel="stylesheet" href="./style.css?v=2025-10-07-01" />
+
+  <!-- (optionnel) export image dernière page si tu l’utilises -->
+  <script defer src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+
+  <!-- Désinscription SW + purge caches une fois, pour éviter un ancien SW bloquant -->
+  <script>
+    (async () => {
+      try {
+        if ('serviceWorker' in navigator) {
+          const regs = await navigator.serviceWorker.getRegistrations();
+          for (const r of regs) await r.unregister();
+        }
+        if (window.caches?.keys) {
+          const keys = await caches.keys();
+          await Promise.all(keys.map(k => caches.delete(k)));
+        }
+      } catch (_) {}
+    })();
+  </script>
 </head>
 <body>
-  <!-- Topbar minimaliste, visuel “Apple-like” -->
+  <!-- Topbar minimaliste -->
   <header class="topbar minimal">
     <div class="brand">
       <span class="brand-title">🎒 Orientation</span>
-      <!-- Bouton reset (facultatif). Laisse-le si tu veux l'utiliser plus tard -->
       <button id="btnReset" class="ghost small" title="Réinitialiser">↺</button>
     </div>
     <div class="actions">
-      <!-- Logo renard : place l’image dans ./assets/renard_univia.png -->
-      <img src="./assets/renard_univia.png?v=2025-09-11-06" alt="Univia" class="logo">
+      <!-- Logo renard versionné (mets l’image dans ./assets/renard_univia.png) -->
+      <img src="./assets/renard_univia.png?v=2025-10-07-01" alt="Univia" class="logo">
     </div>
   </header>
 
   <main id="app" class="stage-wrap">
-    <!-- Carte unique contenant l’UI existante (statut + classement) -->
+    <!-- Carte principale (statut + contrôles + résultats) -->
     <section class="stage card" id="mainStage">
-      <!-- Bandeau status (messages au-dessus du tableau) -->
       <section id="status" class="status muted">Saisis l’ID élève et le token puis clique « Commencer ».</section>
 
-      <!-- Contrôles (on conserve les mêmes IDs pour compatibilité avec app.js) -->
       <section class="controls-panel">
         <div class="controls-row">
           <label for="studentId">ID élève</label>
@@ -51,7 +65,6 @@
         </div>
       </section>
 
-      <!-- Résultats (classement) -->
       <section id="results" class="hidden">
         <h2 class="section-title">Classement des universités (par score de compatibilité)</h2>
 
@@ -75,7 +88,7 @@
     </section>
   </main>
 
-  <!-- ===== Panneau de discussion LLM persistent (bas de page) ===== -->
+  <!-- Chat LLM en bas de page -->
   <section class="chat-dock">
     <div class="chat-header">
       <span>Assistant profil (LLM)</span>
@@ -92,7 +105,7 @@
     <small>Static UI — lit <code>./data/*.json</code> et <code>./normalized/*.json</code>. Le chat appelle OpenAI si un token est saisi.</small>
   </footer>
 
-  <!-- On conserve ton script existant -->
-  <script src="./app.js?v=2025-09-11-06"></script>
+  <!-- JS versionné -->
+  <script defer src="./app.js?v=2025-10-07-01"></script>
 </body>
 </html>
